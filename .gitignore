@@ -3,3 +3,6 @@ package-lock.json
 *.log
 .DS_Store
 .vscode
+public
+.env
+.cache
