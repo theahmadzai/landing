@@ -1,0 +1,11 @@
+.footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 2rem calc((100vw - 90vw - 1rem) / 2);
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 2rem calc((100vw - 1000px - 1rem) / 2);
+  }
+}

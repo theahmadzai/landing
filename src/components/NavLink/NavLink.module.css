@@ -1,0 +1,27 @@
+.link {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin: 0.4rem;
+  transition: background 800ms ease;
+  background: var(--secondary-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: #fff;
+  background: var(--primary-color);
+}
+
+@media screen and (min-width: 768px) {
+  .link {
+    margin: 0 0.4rem;
+  }
+
+  .link:last-child {
+    margin-right: 0;
+  }
+}
