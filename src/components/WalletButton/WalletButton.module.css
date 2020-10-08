@@ -1,0 +1,15 @@
+.button {
+  padding: 1rem;
+  border: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #fafafa;
+}

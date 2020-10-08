@@ -5,14 +5,19 @@
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
-  padding: 0.5rem calc((100vw - 90vw - 1rem) / 2);
+  padding: 1rem 2rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .header {
+    padding: 1rem calc((100vw - 1000px + 2rem) / 2);
+  }
 }
 
 @media screen and (min-width: 768px) {
   .header {
     position: sticky;
     top: 0;
-    padding: 0.5rem calc((100vw - 1000px - 1rem) / 2);
   }
 }
 

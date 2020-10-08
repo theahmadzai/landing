@@ -2,11 +2,11 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styles from './NavLink.module.css'
 
-const NavLink = ({ children, ...props }) => {
+const NavLink = ({ href, children }) => {
   return (
-    <div className={styles.link} {...props}>
+    <Link to={href} className={styles.link} activeClassName={styles.active}>
       {children}
-    </div>
+    </Link>
   )
 }
 

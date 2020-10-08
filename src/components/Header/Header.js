@@ -33,8 +33,8 @@ const Header = () => {
       </Link>
 
       <nav className={styles.navDesktop}>
-        <NavLink>Upload cF</NavLink>
-        <NavLink onClick={showModal}>Deposit</NavLink>
+        <NavLink href="/">Upload cF</NavLink>
+        <NavLink href="/connect">Connect to a Wallet</NavLink>
       </nav>
 
       <ToggleIcon
@@ -51,7 +51,7 @@ const Header = () => {
       >
         <nav className={styles.navMobile}>
           <NavLink href="/">Upload cF</NavLink>
-          <NavLink href="/">Deposit</NavLink>
+          <NavLink href="/connect">Deposit</NavLink>
         </nav>
       </Drawer>
 

@@ -1,5 +1,9 @@
 .main {
-  margin: 0 auto;
-  max-width: 1000px;
-  width: 90vw;
+  padding: 3rem 2rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .main {
+    padding: 3rem calc((100vw - 1000px + 2rem) / 2);
+  }
 }

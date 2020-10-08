@@ -3,14 +3,13 @@ import { graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import { Result, Row, Col, Typography, Button } from 'antd'
 import Tabs from '../components/Tabs/Tabs'
-import styles from './index.module.css'
 
 const { Title, Paragraph } = Typography
 
 export default () => {
   const { flow } = useStaticQuery(graphql`
     query {
-      flow: file(relativePath: { eq: "flow.png" }) {
+      flow: file(relativePath: { eq: "moneyflow.png" }) {
         sharp: childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
@@ -23,7 +22,7 @@ export default () => {
   return (
     <Fragment>
       <Row gutter={48}>
-        <Col span={24} md={12} className={styles.left}>
+        <Col span={24} md={12}>
           <Title>CryptoFlow (cF) - Even your mom start earn with crypto</Title>
           <Paragraph>
             Trusted decentralizd place where you can start invest your
@@ -33,7 +32,7 @@ export default () => {
           <Button type="primary">Start Investing</Button>
         </Col>
         <Col span={24} md={12}>
-          <Img fluid={flow.sharp.fluid} style={{ width: '400px' }} />
+          <Img fluid={flow.sharp.fluid} />
         </Col>
       </Row>
       <Tabs />
