@@ -1,6 +1,7 @@
 import React from 'react'
 import { Row, Col } from 'antd'
 import useIcons from '../hooks/use-icons'
+import Layout from '../components/Layout/Layout'
 import WalletButton from '../components/WalletButton/WalletButton'
 import metamaskHandler from '../wallet-handlers/metamask'
 
@@ -46,17 +47,19 @@ export default () => {
   ]
 
   return (
-    <Row gutter={24}>
-      {wallets.map((wallet, i) => (
-        <Col span={24} sm={12} md={8}>
-          <WalletButton
-            key={i}
-            title={wallet.title}
-            icon={wallet.icon}
-            onClick={wallet.handler}
-          />
-        </Col>
-      ))}
-    </Row>
+    <Layout>
+      <Row gutter={24}>
+        {wallets.map((wallet, i) => (
+          <Col span={24} sm={12} md={8}>
+            <WalletButton
+              key={i}
+              title={wallet.title}
+              icon={wallet.icon}
+              onClick={wallet.handler}
+            />
+          </Col>
+        ))}
+      </Row>
+    </Layout>
   )
 }

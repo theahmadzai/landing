@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import { Result, Row, Col, Typography, Button } from 'antd'
+import Layout from '../components/Layout/Layout'
 import Tabs from '../components/Tabs/Tabs'
 
 const { Title, Paragraph } = Typography
@@ -20,7 +21,7 @@ export default () => {
   `)
 
   return (
-    <Fragment>
+    <Layout>
       <Row gutter={48}>
         <Col span={24} md={12}>
           <Title>CryptoFlow (cF) - Even your mom start earn with crypto</Title>
@@ -36,6 +37,6 @@ export default () => {
         </Col>
       </Row>
       <Tabs />
-    </Fragment>
+    </Layout>
   )
 }
